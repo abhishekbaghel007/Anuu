@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0b0610">
+<title>For Annuuu 🥺❤️</title>
+<style>
+:root{
+  --bg:#09050d;--bg2:#160914;--pink:#ff6687;--rose:#ff9ab0;
+  --cream:#fff4f5;--muted:#c8aeb7;--card:rgba(255,255,255,.065);
+  --border:rgba(255,160,180,.16);--shadow:0 30px 100px rgba(0,0,0,.5);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;min-height:100vh;color:var(--cream);overflow-x:hidden;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:
+    radial-gradient(circle at 50% 15%,#351326 0,transparent 30%),
+    radial-gradient(circle at 10% 80%,#210b18 0,transparent 28%),
+    var(--bg);
+}
+button{font:inherit}
+.bg{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.glow{position:absolute;width:420px;height:420px;border-radius:50%;filter:blur(90px);opacity:.13;background:#ff315f}
+.g1{top:-180px;left:-100px}.g2{right:-180px;bottom:-180px}
+.spark{position:absolute;width:3px;height:3px;border-radius:50%;background:#fff;opacity:.3;animation:twinkle 4s ease-in-out infinite}
+@keyframes twinkle{50%{opacity:.9;transform:scale(1.8)}}
+.app{position:relative;z-index:1}
+.screen{
+  min-height:100svh;display:grid;place-items:center;padding:70px 20px;
+  position:relative;
+}
+.inner{width:min(900px,100%);text-align:center}
+.kicker{
+  font-size:11px;letter-spacing:.32em;text-transform:uppercase;
+  color:#aa8c96;margin-bottom:25px;
+}
+h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.hero h1{
+  font-size:clamp(50px,11vw,108px);line-height:.9;letter-spacing:-.055em;
+  margin:0;text-shadow:0 0 55px rgba(255,80,120,.16)
+}
+.hero h1 span{color:var(--rose)}
+.hero .intro{
+  max-width:700px;margin:30px auto 0;font-family:Georgia,serif;
+  font-size:clamp(20px,3vw,29px);line-height:1.5;color:#ead7dc
+}
+.hero .intro b{color:#ff8fa7;font-weight:500}
+.emoji{display:inline-block;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-7px) rotate(4deg)}}
+.btn{
+  border:1px solid rgba(255,128,155,.38);color:white;background:linear-gradient(135deg,#6d1934,#401020);
+  padding:14px 22px;border-radius:999px;cursor:pointer;transition:.25s;
+  box-shadow:0 12px 35px rgba(130,20,55,.18);font-weight:700
+}
+.btn:hover{transform:translateY(-3px);border-color:#ff7795;box-shadow:0 18px 45px rgba(190,35,75,.25)}
+.hero .btn{margin-top:35px}
+.scroll{
+  position:absolute;bottom:22px;left:50%;transform:translateX(-50%);
+  color:#745e66;font-size:11px;letter-spacing:.16em;text-transform:uppercase
+}
+.section{padding:110px 20px}
+.wrap{width:min(900px,100%);margin:auto}
+.center{text-align:center}
+h2{font-size:clamp(38px,7vw,65px);line-height:1;margin:0 0 25px}
+.sub{color:var(--muted);line-height:1.8;max-width:650px;margin:auto;font-size:17px}
+.story{
+  margin:42px auto 0;padding:34px;max-width:760px;text-align:left;
+  border:1px solid var(--border);background:var(--card);backdrop-filter:blur(16px);
+  border-radius:28px;box-shadow:var(--shadow)
+}
+.story p{font-family:Georgia,serif;color:#e8d8dc;font-size:19px;line-height:1.9;margin:0 0 17px}
+.story p:last-child{margin:0}
+.highlight{color:#ff829b;font-weight:700}
+.punish-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:40px auto;max-width:760px
+}
+.choice{
+  text-align:left;border:1px solid var(--border);background:rgba(255,255,255,.055);
+  color:white;border-radius:22px;padding:20px;cursor:pointer;transition:.25s
+}
+.choice:hover{transform:translateY(-4px);background:rgba(255,90,125,.1);border-color:rgba(255,130,155,.4)}
+.choice strong{display:block;font-size:16px;margin-bottom:5px}.choice small{color:#aa969d}
+.response{
+  min-height:35px;text-align:center;color:#ffafbd;font-family:Georgia,serif;font-size:20px;
+  line-height:1.6;opacity:0;transform:translateY(8px);transition:.4s
+}
+.response.show{opacity:1;transform:none}
+.good{font-size:26px;color:#fff}
+.badge{
+  display:inline-block;padding:7px 11px;border-radius:999px;
+  background:rgba(255,100,130,.09);color:#ff9db0;font-size:11px;
+  letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px
+}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:42px}
+.quote{
+  padding:27px;border:1px solid var(--border);border-radius:24px;background:var(--card);
+  min-height:145px;display:flex;align-items:center;justify-content:center;
+  text-align:center;font-family:Georgia,serif;font-size:20px;line-height:1.6;
+  opacity:0;transform:translateY(25px);transition:.65s
+}
+.quote.visible{opacity:1;transform:none}
+.quote:nth-child(2){transition-delay:.1s}.quote:nth-child(3){transition-delay:.2s}.quote:nth-child(4){transition-delay:.3s}
+.quote span{color:#ff849d}
+.real{
+  position:relative;padding:40px 35px;margin-top:42px;border-radius:30px;
+  background:linear-gradient(145deg,rgba(255,93,126,.10),rgba(255,255,255,.04));
+  border:1px solid var(--border);overflow:hidden
+}
+.real:before{content:"♡";position:absolute;right:-10px;top:-45px;font:180px Georgia;color:rgba(255,110,140,.045)}
+.real p{font-family:Georgia,serif;font-size:20px;line-height:1.85;color:#eadce0;margin:0 0 18px;position:relative}
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}
+.promise{
+  border:1px solid var(--border);background:var(--card);border-radius:25px;padding:28px 20px;
+  cursor:pointer;transition:.25s;min-height:200px
+}
+.promise:hover{transform:translateY(-5px);border-color:rgba(255,130,155,.45)}
+.promise .icon{font-size:38px;margin-bottom:15px}.promise h3{margin:0 0 9px;font:24px Georgia}.promise p{margin:0;color:#bcaab0;line-height:1.65;font-size:14px}
+.promise.active{background:rgba(255,80,120,.12);box-shadow:0 20px 50px rgba(160,30,70,.15)}
+.final{
+  min-height:100svh;text-align:center;display:grid;place-items:center;padding:80px 20px;
+  background:radial-gradient(circle at center,#3b1020 0,transparent 50%)
+}
+.final-heart{font-size:82px;display:inline-block;animation:heartbeat 1.2s infinite;filter:drop-shadow(0 0 25px rgba(255,55,100,.5))}
+@keyframes heartbeat{0%,100%{transform:scale(1)}15%{transform:scale(1.12)}30%{transform:scale(1)}45%{transform:scale(1.07)}}
+.final h2{margin-top:15px}
+.final p{max-width:720px;margin:25px auto;color:#dfcbd1;font:20px/1.8 Georgia,serif}
+.award{font-size:clamp(20px,4vw,31px);line-height:1.6;color:#ff9caf;font-family:Georgia,serif;margin:25px auto;max-width:800px}
+.footer{color:#6f5961;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-top:50px}
+.confetti{position:fixed;pointer-events:none;font-size:22px;z-index:20;animation:confetti 2.5s ease-out forwards}
+@keyframes confetti{0%{transform:translate(0,0) scale(.7);opacity:1}100%{transform:translate(var(--x),var(--y)) rotate(var(--r)) scale(1.4);opacity:0}}
+@media(max-width:700px){
+  .section{padding:80px 16px}.story{padding:25px 21px}.story p{font-size:17px}
+  .punish-grid,.cards{grid-template-columns:1fr}.promise-grid{grid-template-columns:1fr}
+  .promise{min-height:auto}.real{padding:30px 23px}.real p{font-size:17px}
+}
+</style>
+
+<style id="mobile-first-override">
+:root{--mobile-gutter:18px}
+html{scroll-snap-type:y proximity}
+body{-webkit-tap-highlight-color:transparent;touch-action:pan-y}
+.screen,.section,.final{
+  min-height:100svh;
+  min-height:100dvh;
+  padding:42px var(--mobile-gutter);
+  scroll-snap-align:start;
+}
+.hero{padding-top:34px;padding-bottom:34px}
+.inner,.wrap{width:100%;max-width:none}
+.kicker{font-size:9px;letter-spacing:.23em;margin-bottom:19px}
+.hero h1{font-size:clamp(48px,14vw,70px);line-height:.88;letter-spacing:-.065em}
+.hero .intro{font-size:20px;line-height:1.52;margin-top:25px}
+.hero .intro br+br{display:block;height:3px}
+.hero .btn{margin-top:28px}
+.btn{
+  width:100%;
+  min-height:52px;
+  padding:15px 18px;
+  font-size:14px;
+  border-radius:17px;
+}
+.scroll{bottom:14px;font-size:9px}
+.section{padding-top:58px;padding-bottom:58px}
+h2{font-size:clamp(38px,11vw,54px);line-height:.96;letter-spacing:-.04em}
+.sub{font-size:15px;line-height:1.7}
+.story{
+  margin-top:28px;padding:23px 19px;border-radius:22px;
+  text-align:left;box-shadow:0 20px 55px rgba(0,0,0,.4)
+}
+.story p{font-size:17px;line-height:1.72;margin-bottom:13px}
+.story p:last-child{margin-bottom:0}
+.punish-grid{grid-template-columns:1fr;gap:10px;margin:28px auto}
+.choice{
+  min-height:65px;padding:15px 16px;border-radius:17px;
+  display:block;text-align:left;
+}
+.choice strong{font-size:14px}.choice small{font-size:11px}
+.response{font-size:18px;line-height:1.55}
+.cards{grid-template-columns:1fr;gap:11px;margin-top:28px}
+.quote{
+  min-height:112px;padding:21px 18px;border-radius:20px;
+  font-size:18px;line-height:1.5
+}
+.real{padding:25px 19px;margin-top:28px;border-radius:22px}
+.real p{font-size:17px;line-height:1.72}
+.promise-grid{grid-template-columns:1fr;gap:11px;margin-top:28px}
+.promise{
+  min-height:0;padding:21px 19px;border-radius:20px;
+  display:grid;grid-template-columns:48px 1fr;column-gap:12px;text-align:left;
+}
+.promise .icon{font-size:31px;grid-row:1/3;margin:0}
+.promise h3{font-size:21px;margin:0 0 4px}
+.promise p{font-size:13px;line-height:1.55}
+.final{padding-top:45px;padding-bottom:45px}
+.final-heart{font-size:67px}
+.final h2{font-size:56px}
+.final p{font-size:17px;line-height:1.7}
+.award{font-size:20px;line-height:1.55}
+.footer{font-size:9px;line-height:1.6}
+.spark{width:2px;height:2px}
+.glow{width:260px;height:260px;filter:blur(65px)}
+@media (max-width:380px){
+  .hero h1{font-size:45px}
+  .hero .intro{font-size:18px}
+  h2{font-size:37px}
+  .story p,.real p{font-size:16px}
+}
+</style>
+
+</head>
+<body>
+<div class="bg"><div class="glow g1"></div><div class="glow g2"></div><div id="stars"></div></div>
+<div class="app">
+
+<section class="screen hero" id="home">
+  <div class="inner">
+    <div class="kicker">a very serious apology website</div>
+    <h1><span>ANNNUUUU</span> 🥺👉🏻👈🏻</h1>
+    <div class="intro">
+      mujhe pata hai main <b>gadha</b> hoon.<br>
+      Actually... <b>thoda zyada.</b> 😭<br><br>
+      Aur haan, mujhe tumse <b>sorry bolna hai. Properly.</b><br>
+      <span style="font-size:.8em">Especially for what I said about your pasta. 🍝</span>
+    </div>
+    <button class="btn" onclick="go('confession')">Haan haan, sorry bol pehle →</button>
+  </div>
+  <div class="scroll">scroll ↓</div>
+</section>
+
+<section class="section" id="confession">
+  <div class="wrap">
+    <div class="center">
+      <div class="badge">Exhibit A: the pasta incident</div>
+      <h2>Okay listen... 😭</h2>
+      <p class="sub">I have prepared a completely unnecessary website because apparently a normal “sorry” was not dramatic enough.</p>
+    </div>
+    <div class="story">
+      <p>Tumne <span class="highlight">first time</span> pasta banaya tha.</p>
+      <p>Aur tumne itna pyaar se muje photo bheji...</p>
+      <p>aur iss mahaan insaan ne kya kiya?</p>
+      <p><span class="highlight">“yeh toh bahut bura hai”</span> 😭</p>
+      <p>Muje lga tha main bas thoda sa ragebait kr rha hu</p>
+      <p>Muje nhi pta tha ki madam ne <span class="highlight">FIRST TIME</span> banaya tha. 😭</p>
+      <p>So yes...</p>
+      <p><b>meri galti thi. Puri meri.</b></p>
+      <p>Tumhra pasta bura nhi tha.</p>
+      <p><span class="highlight">Tumhara boyfriend stupid tha 🫠</span></p>
+    </div>
+    <div class="center" style="margin-top:35px"><button class="btn" onclick="go('punishment')">Okay, next →</button></div>
+  </div>
+</section>
+
+<section class="section" id="punishment">
+  <div class="wrap center">
+    <div class="badge">Your courtroom</div>
+    <h2>Ab tum decide karo<br>meri punishment.</h2>
+    <p class="sub">Judge Annu, the defendant admits all charges. Humanity's legal system has never been this efficient</p>
+    <div class="punish-grid">
+      <button class="choice" onclick="punish('A')"><strong>A. Mujhe daanto 😤</strong><small>Defendant will sit quietly.</small></button>
+      <button class="choice" onclick="punish('B')"><strong>B. Mujhse baat mat kro for 5 mins 😭</strong><small>Maximum sentence requested.</small></button>
+      <button class="choice" onclick="punish('C')"><strong>C. Ek virtual slap 👋🏻</strong><small>*bonk* emotionally received.</small></button>
+      <button class="choice" onclick="punish('D')"><strong>D. Mujhe maaf kar do 🥺</strong><small>Mercy. Please consider mercy.</small></button>
+      <button class="choice" style="grid-column:1/-1" onclick="punish('E')"><strong>E. Mujhe aur punish kro because I deserve it 😔</strong><small>The defendant has lost all bargaining power.</small></button>
+    </div>
+    <div class="response" id="punishResponse"></div>
+    <button class="btn" style="margin-top:28px" onclick="go('things')">Okay, next →</button>
+  </div>
+</section>
+
+<section class="section" id="things">
+  <div class="wrap">
+    <div class="center">
+      <div class="badge">Things I should've said</div>
+      <h2>Basically...</h2>
+      <p class="sub">In an alternate universe where my brain works correctly, I would have replied like this:</p>
+    </div>
+    <div class="cards">
+      <div class="quote">“Areyyy this actually looks so good 😭❤️”</div>
+      <div class="quote">“FIRST TIME??? You actually made this yourself??”</div>
+      <div class="quote">“I'm proud of you yrr 🥺”</div>
+      <div class="quote">“Mujhe khilana tha na, photo bhej ke kyun torture kr rhi thi 😭”</div>
+    </div>
+    <div class="real center" style="margin-top:45px">
+      <p>Basically mujhe yeh sab bolna chahiye tha...</p>
+      <p>But apparently mera dimaag decide kr chuka tha ki<br><span class="highlight">“let's annoy my girlfriend today.” 🤡</span></p>
+    </div>
+    <div class="center" style="margin-top:35px"><button class="btn" onclick="go('real')">No jokes for a second →</button></div>
+  </div>
+</section>
+
+<section class="section" id="real">
+  <div class="wrap">
+    <div class="center"><div class="badge">Okay, genuinely</div><h2>But jokes apart... ❤️</h2></div>
+    <div class="real">
+      <p>Muje genuinely bura lg rha hai ki maine tumhari first pasta wali excitement ko thoda kharab kar diya</p>
+      <p>Tumne mere saath share kiya because you were probably happy ki tumne first time banaya... aur mujhe tumhe appreciate karna chahiye tha.</p>
+      <p><span class="highlight">Instead I chose violence. 😭</span></p>
+      <p>I'm sorry, Annu.</p>
+      <p>Aur haan, next time jo bhi tum banaogi na, pehle photo bhejna.</p>
+      <p>Is baar main <span class="highlight">compliment karunga</span>, ragebait nahi. 😭❤️</p>
+    </div>
+    <div class="center" style="margin-top:60px"><button class="btn" onclick="go('promises')">One tiny promise →</button></div>
+  </div>
+</section>
+
+<section class="section" id="promises">
+  <div class="wrap">
+    <div class="center">
+      <div class="badge">Terms & conditions of this apology</div>
+      <h2>My promises to you. 🥺</h2>
+      <p class="sub">Tap each one. Yes, even apologies now have interactive legal documentation.</p>
+    </div>
+    <div class="promise-grid">
+      <div class="promise" onclick="this.classList.toggle('active')">
+        <div class="icon">🍝</div><h3>Pasta Promise</h3>
+        <p>Tumhare pasta ko kabhi bura nhi bolunga.<br><br><i>Unless it actually kills me. Then we'll discuss. 😭</i></p>
+      </div>
+      <div class="promise" onclick="this.classList.toggle('active')">
+        <div class="icon">📸</div><h3>Photo Promise</h3>
+        <p>Tum jab bhi muje kuch bhejogi, I'll actually appreciate it. No unnecessary ragebait department.</p>
+      </div>
+      <div class="promise" onclick="this.classList.toggle('active')">
+        <div class="icon">🥺</div><h3>Girlfriend Promise</h3>
+        <p>Tumhari choti choti achievements ko kabhi lightly nahi lunga.</p>
+      </div>
+    </div>
+    <div class="center" style="margin-top:55px"><button class="btn" onclick="go('final')">Okay... last thing ❤️</button></div>
+  </div>
+</section>
+
+<section class="final" id="final">
+  <div class="inner">
+    <div class="final-heart">❤️</div>
+    <div class="kicker" style="margin-top:20px">final statement from the idiot</div>
+    <h2>Annu... ❤️</h2>
+    <p>
+      I'm sorry yrr.<br>
+      Mujhe tumhari feelings hurt karni nhi thi.<br>
+      Main bas tumhe thoda tease kar raha tha, but I should've known ki tumhare liye woh moment actually special tha.
+    </p>
+    <div class="award">
+      I love you. Bohot zyada. ❤️<br><br>
+      Aur tumhara pasta...<br>
+      <b>10/10. Michelin star. Five stars.<br>
+      National award. Oscar. Nobel Prize.<br>
+      Sab tumhara. 😭🍝🏆</b>
+    </div>
+    <p style="font-size:24px;color:#ffafbd">Ab smile kar do please. 🥺❤️</p>
+    <button class="btn" onclick="forgive()">Forgive this idiot? 🥺</button>
+    <div class="footer">made with guilt • love • and an irresponsible amount of HTML</div>
+  </div>
+</section>
+
+</div>
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:"smooth"})}
+
+function punish(choice){
+  const r=document.getElementById("punishResponse");
+  const messages={
+    A:"Okay 😭 I'll take the daant. I probably deserve the full lecture.",
+    B:"5 minutes??? That's actually merciful. I'll serve my sentence. 🧎🏻",
+    C:"*virtual slap received* 👋🏻😭 My soul has been corrected.",
+    D:"<span class='good'>WAIT WHAT??? 😭❤️</span><br>Itni jaldi maaf kar diya?<br>Mujhe laga tha minimum 3 business days lagenge.",
+    E:"I knew I shouldn't have given you options. 😭 You have unlimited power now."
+  };
+  r.innerHTML=messages[choice];r.classList.add("show");
+  if(choice==="D") burst();
+}
+
+function burst(){
+  const items=["❤️","💗","💕","🥺","✨","🍝"];
+  for(let i=0;i<35;i++){
+    const e=document.createElement("div");e.className="confetti";
+    e.textContent=items[Math.floor(Math.random()*items.length)];
+    e.style.left="50%";e.style.top="55%";
+    e.style.setProperty("--x",(Math.random()*1000-500)+"px");
+    e.style.setProperty("--y",(Math.random()*700-350)+"px");
+    e.style.setProperty("--r",(Math.random()*700-350)+"deg");
+    e.style.animationDelay=(Math.random()*.3)+"s";
+    document.body.appendChild(e);setTimeout(()=>e.remove(),3000);
+  }
+}
+
+function forgive(){
+  burst();
+  setTimeout(()=>{
+    alert("LESSSGOOOO 😭❤️\n\nAnnu has officially forgiven this idiot.\n\nPeace has been restored. 🍝🕊️\n\nNow I owe you one proper compliment... and probably one pasta date. ❤️");
+  },250);
+}
+
+const stars=document.getElementById("stars");
+for(let i=0;i<100;i++){
+  const s=document.createElement("i");s.className="spark";
+  s.style.left=Math.random()*100+"%";s.style.top=Math.random()*100+"%";
+  s.style.animationDelay=Math.random()*4+"s";stars.appendChild(s);
+}
+
+const quotes=document.querySelectorAll(".quote");
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible")})
+},{threshold:.2});
+quotes.forEach(q=>observer.observe(q));
+</script>
+
+<script id="mobile-enhancements">
+(function(){
+  const bar=document.createElement("div");
+  bar.style.cssText="position:fixed;top:0;left:0;height:2px;width:0;background:#ff6687;z-index:9999;box-shadow:0 0 12px #ff6687;transition:width .1s";
+  document.body.appendChild(bar);
+  function progress(){
+    const max=document.documentElement.scrollHeight-innerHeight;
+    bar.style.width=(max>0?(scrollY/max)*100:0)+"%";
+  }
+  addEventListener("scroll",progress,{passive:true}); progress();
+
+  // Prevent accidental double-tap zoom on interactive controls while keeping pinch zoom.
+  document.querySelectorAll("button,.promise").forEach(el=>{
+    el.style.touchAction="manipulation";
+  });
+})();
+</script>
+
+</body>
+</html>

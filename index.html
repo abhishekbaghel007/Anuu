@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4b0715">
+<title>For Annu, my Jaan ❤️</title>
+<style>
+:root{
+ --red:#65091a;--red2:#8e1028;--red3:#b52b43;--deep:#30040d;
+ --cream:#fff0df;--cream2:#ffe4d1;--gold:#ffd34f;--pink:#ff91a6;
+ --ink:#4b0b18;--muted:#d9aeb4;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-snap-type:y mandatory}
+body{margin:0;overflow-x:hidden;background:var(--deep);color:var(--cream);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
+section{min-height:100svh;min-height:100dvh;scroll-snap-align:start;position:relative;overflow:hidden}
+section:not(.hero):not(.final){display:flex;align-items:center;padding:55px 18px}
+.hero,.final{display:flex;align-items:center;justify-content:center;padding:40px 18px}
+.hero{background:
+ radial-gradient(circle at 50% 42%,rgba(255,73,104,.3),transparent 27%),
+ radial-gradient(circle at 10% 90%,rgba(255,190,70,.13),transparent 28%),
+ linear-gradient(160deg,#450611,#8d1028 52%,#4b0614)}
+.final{background:
+ radial-gradient(circle at 50% 45%,rgba(255,71,104,.35),transparent 30%),
+ radial-gradient(circle at 20% 100%,rgba(255,205,72,.12),transparent 25%),
+ linear-gradient(165deg,#3d0611,#870e27 55%,#510716)}
+.wrap{width:min(720px,100%);margin:auto;position:relative;z-index:3}
+.center{text-align:center}.tag{text-transform:uppercase;letter-spacing:.24em;font-size:9px;color:#e9aeb8;margin-bottom:17px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.hero h1{font-size:clamp(51px,15vw,88px);line-height:.86;letter-spacing:-.065em;margin:0;color:#fff7ee;text-shadow:0 8px 35px #21000866}
+.hero h1 span{color:var(--gold)}
+.hero .heart{font-size:32px;display:block;margin:25px 0 7px;animation:beat 1.25s infinite;filter:drop-shadow(0 0 16px #ff6b84)}
+@keyframes beat{50%{transform:scale(1.18)}}
+.hero p{font:20px/1.62 Georgia,serif;color:#ffe4de;margin:0}.hero p b{color:#ffd45c}
+.btn{width:100%;min-height:53px;margin-top:28px;border:1px solid #ffdf7b77;border-radius:18px;background:linear-gradient(135deg,#ffd95b,#f4b936);color:#5b0b17;font-weight:800;cursor:pointer;box-shadow:0 14px 34px #26030b55;transition:.2s}.btn:active{transform:scale(.98)}
+.hero .btn{margin-top:29px}.hint{position:absolute;bottom:17px;font-size:9px;letter-spacing:.18em;color:#ffd9ce;opacity:.65}
+.paper{background:
+ radial-gradient(circle at 10% 10%,rgba(255,76,100,.16),transparent 22%),
+ radial-gradient(circle at 90% 90%,rgba(255,195,62,.14),transparent 25%),
+ linear-gradient(145deg,#7e0c20,#a91934 50%,#64101d)}
+.paper2{background:
+ radial-gradient(circle at 85% 10%,rgba(255,207,69,.16),transparent 24%),
+ radial-gradient(circle at 15% 85%,rgba(255,98,121,.17),transparent 28%),
+ linear-gradient(145deg,#510817,#8d132a 48%,#5b0918)}
+.warm{background:
+ radial-gradient(circle at 50% 0,rgba(255,210,80,.15),transparent 24%),
+ linear-gradient(145deg,#6c0a1b,#a51e38,#690b1b)}
+h2{font-size:clamp(41px,11vw,62px);line-height:.92;letter-spacing:-.05em;margin:0 0 19px;color:#fff3e7;text-shadow:0 4px 25px #2b020866}
+.sub{color:#f0c5c4;font-size:15px;line-height:1.7;margin:auto;max-width:620px}
+.card,.real,.quote,.promise{
+ background:rgba(39,3,12,.34);border:1px solid rgba(255,205,150,.2);
+ box-shadow:0 22px 65px #27030b44,inset 0 1px #fff3;
+ backdrop-filter:blur(14px)
+}
+.card{margin-top:29px;padding:26px 20px;border-radius:26px}
+.card p,.real p{font:17px/1.78 Georgia,serif;color:#ffe4dc;margin:0 0 14px}.card p:last-child,.real p:last-child{margin:0}
+.red{color:#ffb0ba;font-weight:700}.gold{color:#ffe06b;font-weight:700}
+.card .bigline{font-size:24px;text-align:center;color:#ffbdc6}
+.choice-grid{display:grid;gap:10px;margin-top:27px}.choice{padding:17px;border-radius:18px;text-align:left;color:#fff1e8;background:rgba(34,2,10,.36);border:1px solid #ffcfaa33;cursor:pointer;transition:.2s}.choice.selected{background:rgba(255,188,72,.13);border-color:#ffd46b88}.choice b{font-size:14px}.choice small{display:block;color:#ddb6b7;margin-top:4px}.reply{min-height:65px;margin-top:13px;color:#ffd1d6;font:18px/1.55 Georgia,serif;text-align:center}
+.quotes{display:grid;gap:11px;margin-top:27px}.quote{padding:24px 19px;border-radius:22px;color:#ffe7de;font:18px/1.55 Georgia,serif;opacity:0;transform:translateY(16px);transition:.6s}.quote.show{opacity:1;transform:none}.quote:nth-child(2){transition-delay:.08s}.quote:nth-child(3){transition-delay:.16s}.quote:nth-child(4){transition-delay:.24s}
+.real{margin-top:27px;padding:27px 20px;border-radius:26px}.serious{color:#ffe9e2!important}
+.promises{display:grid;gap:11px;margin-top:27px}.promise{padding:20px;border-radius:22px;display:grid;grid-template-columns:48px 1fr;gap:3px 10px;cursor:pointer}.promise .icon{font-size:31px;grid-row:1/3}.promise h3{font-size:22px;margin:0;color:#fff1dd}.promise p{margin:0;color:#dcb9b7;font-size:13px;line-height:1.55}.promise.open{background:rgba(255,198,62,.12);border-color:#ffd76888}
+.final .bigheart{font-size:75px;text-align:center;animation:beat 1.2s infinite;filter:drop-shadow(0 0 30px #ff5c78)}.final h2{font-size:60px}.final p{font:18px/1.78 Georgia,serif;color:#ffe8e0;text-align:center}.award{font:22px/1.6 Georgia,serif;color:#ffe06a;text-align:center;margin:25px 0}
+.flower{position:absolute;z-index:1;pointer-events:none}.sunflower{width:100px;height:100px;right:-20px;top:6%;animation:sway 5s ease-in-out infinite}.sunflower.left{left:-27px;right:auto;top:64%;transform:scale(.72);animation-delay:1.2s}
+.petal{position:absolute;width:24px;height:43px;background:linear-gradient(#ffe56b,#f4b62c);border-radius:55%;left:38px;top:2px;transform-origin:50% 48px}.sunflower .petal:nth-child(1){transform:rotate(0)}.sunflower .petal:nth-child(2){transform:rotate(45deg)}.sunflower .petal:nth-child(3){transform:rotate(90deg)}.sunflower .petal:nth-child(4){transform:rotate(135deg)}.sunflower .petal:nth-child(5){transform:rotate(180deg)}.sunflower .petal:nth-child(6){transform:rotate(225deg)}.sunflower .petal:nth-child(7){transform:rotate(270deg)}.sunflower .petal:nth-child(8){transform:rotate(315deg)}.sunflower .center{position:absolute;width:41px;height:41px;border-radius:50%;left:30px;top:30px;background:#6b2c13;box-shadow:inset 0 0 0 7px #93471a}
+@keyframes sway{50%{transform:rotate(5deg) translateY(-5px)}}
+.lily{width:120px;height:100px;left:-28px;top:7%;opacity:.9;transform:rotate(-15deg)}.lily:before,.lily:after,.lily i{content:"";position:absolute;width:62px;height:92px;background:linear-gradient(145deg,#fff8e9,#f5cbd1);border-radius:90% 18% 90% 18%;left:30px;top:5px}.lily:before{transform:rotate(47deg)}.lily:after{transform:rotate(-47deg)}.lily i{transform:rotate(0);background:linear-gradient(145deg,#fffaf0,#f0bfc8)}
+.flower2{right:-35px;bottom:8%;transform:scale(.8) rotate(14deg)}.flower2.lily:before,.flower2.lily:after,.flower2.lily i{background:linear-gradient(145deg,#fff9ec,#f2c2ca)}
+.floating{position:fixed;bottom:-30px;z-index:20;pointer-events:none;animation:rise 8s linear forwards;font-size:20px}@keyframes rise{12%{opacity:.7}100%{opacity:0;transform:translateY(-110vh) rotate(18deg) scale(1.2)}}
+.progress{position:fixed;top:0;left:0;height:3px;width:0;background:#ffd45d;z-index:50;box-shadow:0 0 12px #ffd45d}
+@media(min-width:650px){section:not(.hero):not(.final){padding:60px 30px}.choice-grid{grid-template-columns:1fr 1fr}.quotes{grid-template-columns:1fr 1fr}.promises{grid-template-columns:repeat(3,1fr)}.promise{display:block;text-align:center}.promise .icon{display:block}.promise h3{margin:8px 0}.btn{width:auto;padding:15px 28px}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<section class="hero" id="home">
+ <div class="flower sunflower"><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><div class="center"></div></div>
+ <div class="flower sunflower left"><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><i class="petal"></i><div class="center"></div></div>
+ <div class="flower lily"><i></i></div>
+ <div class="hero-inner wrap center"><div class="tag">for the girl who has my whole heart ♡</div><h1><span>ANNNUUUU</span><br>🥺👉🏻👈🏻</h1><span class="heart">♡</span><p>mujhe pata hai main <b>gadha</b> hoon.<br>Actually... <b>thoda zyada.</b> 😭<br><br>aur mujhe tumse <b>sorry bolna hai. Properly.</b></p><button class="btn" onclick="go('story')">Haan haan, sorry bol pehle →</button></div>
+ <div class="hint">scroll down · jaan ♡</div>
+</section>
+
+<section class="paper" id="story"><div class="wrap"><div class="tag center">the pasta incident 🍝</div><h2>Okay listen... 😭</h2><div class="card">
+<p>Tumne <span class="gold">first time</span> pasta banaya tha.</p><p>Aur tumne itna pyaar se mujhe photo bheji...</p><p>aur iss mahaan insaan ne kya kiya?</p><p class="bigline"><span class="red">“yeh toh bahut bura hai”</span> 😭</p><p>Mujhe laga tha main bas thoda sa ragebait kar raha hoon.</p><p>Mujhe nahi pata tha ki madam ne <span class="gold">FIRST TIME</span> banaya tha. 😭</p><p>So yes... <b>meri galti thi. Puri meri.</b></p><p>Tumhara pasta bura nahi tha.</p><p class="bigline"><span class="red">Tumhara boyfriend stupid tha. 🫠</span></p></div><button class="btn" onclick="go('punish')">Okay, next →</button></div></section>
+
+<section class="paper2" id="punish"><div class="wrap"><div class="tag center">jaan's courtroom ⚖️</div><h2>Ab tum decide karo<br>meri punishment.</h2><p class="sub">Judge Annu has complete authority. The defendant has no lawyer. 😭</p><div class="choice-grid">
+<button class="choice" onclick="punish(this,'A')"><b>A. Mujhe daanto 😤</b><small>Full lecture accepted.</small></button>
+<button class="choice" onclick="punish(this,'B')"><b>B. Mujhse baat mat karo for 5 mins 😭</b><small>Maximum sentence requested.</small></button>
+<button class="choice" onclick="punish(this,'C')"><b>C. Ek virtual slap 👋🏻</b><small>*bonk* emotionally received.</small></button>
+<button class="choice" onclick="punish(this,'D')"><b>D. Mujhe maaf kar do 🥺</b><small>The nicest possible verdict.</small></button>
+<button class="choice" onclick="punish(this,'E')"><b>E. Mujhe aur punish karo 😔</b><small>I clearly shouldn't have made this interactive.</small></button>
+</div><div class="reply" id="reply"></div><button class="btn" onclick="go('say')">Okay, next →</button></div></section>
+
+<section class="warm" id="say"><div class="wrap"><div class="tag center">what my stupid brain forgot to say</div><h2>If my brain worked... 🌻</h2><p class="sub">Tumhari photo aayi thi. Mujhe ye bolna chahiye tha:</p><div class="quotes">
+<div class="quote">“Areyyy this actually looks so good 😭❤️”</div><div class="quote">“FIRST TIME??? You actually made this yourself??”</div><div class="quote">“I'm proud of you yrr 🥺”</div><div class="quote">“Mujhe khilana tha na, photo bhej ke kyun torture kar rahi thi 😭”</div>
+</div><div class="real center"><p>But apparently mera dimaag decide kar chuka tha ki...</p><p><span class="red">“let's annoy my girlfriend today.” 🤡</span></p></div><button class="btn" onclick="go('real')">No jokes for a second →</button></div></section>
+
+<section class="paper" id="real"><div class="wrap"><div class="tag center">from my heart</div><h2>But jokes apart... ❤️</h2><div class="real">
+<p>Mujhe genuinely bura lag raha hai ki maine tumhari first pasta wali excitement ko thoda kharab kar diya.</p><p>Tumne mere saath share kiya because you were probably happy ki tumne first time banaya... aur mujhe tumhe appreciate karna chahiye tha.</p><p><span class="red">Instead I chose violence. 😭</span></p><p>I'm sorry, Annu.</p><p>Aur haan, next time jo bhi tum banaogi na, pehle photo bhejna.</p><p>Is baar main <span class="gold">compliment karunga</span>, ragebait nahi. 😭❤️</p></div><button class="btn" onclick="go('promise')">Three promises for my jaan →</button></div></section>
+
+<section class="paper2" id="promise"><div class="wrap"><div class="tag center">for my jaan ♡</div><h2>Three little promises.</h2><p class="sub">Tap each flower. 🌻🌷🌼</p><div class="promises">
+<div class="promise" onclick="this.classList.toggle('open')"><div class="icon">🌻</div><h3>Pasta Promise</h3><p>Tumhare pasta ko kabhi bura nahi bolunga.<br><i>Unless it actually kills me. Then we'll discuss. 😭</i></p></div>
+<div class="promise" onclick="this.classList.toggle('open')"><div class="icon">🌷</div><h3>Photo Promise</h3><p>Tum jab bhi mujhe kuch bhejogi, I'll actually appreciate it. No ragebait department.</p></div>
+<div class="promise" onclick="this.classList.toggle('open')"><div class="icon">🌼</div><h3>Jaan Promise</h3><p>Tumhari choti choti achievements ko kabhi lightly nahi lunga. You matter to me.</p></div>
+</div><button class="btn" onclick="go('final')">One last thing, jaan →</button></div></section>
+
+<section class="final" id="final"><div class="flower lily flower2"><i></i></div><div class="wrap center"><div class="bigheart">❤️</div><div class="tag">a little note from your idiot</div><h2>Annu...</h2><p>I'm sorry yrr.<br>Mujhe tumhari feelings hurt karni nahi thi.<br>Main bas tumhe thoda tease kar raha tha, but I should've known ki tumhare liye woh moment actually special tha.</p><div class="award">I love you. Bohot zyada. ❤️<br><br>Aur tumhara pasta...<br><b>10/10. Michelin star. Five stars.<br>National award. Oscar. Nobel Prize.<br>Sab tumhara. 😭🍝🏆</b></div><p>Ab smile kar do please. 🥺❤️</p><button class="btn" onclick="forgive()">Forgive this idiot? 🥺</button><div id="after" style="display:none;margin-top:25px;font:18px/1.7 Georgia,serif;color:#ffe7de">LESSSGOOOO 😭❤️<br><br><b>Annu has officially forgiven this idiot.</b><br><br>Peace has been restored. 🍝🕊️<br>Now I owe you one proper compliment... and probably one pasta date. ❤️</div></div></section>
+
+<script>
+const go=id=>document.getElementById(id).scrollIntoView({behavior:"smooth"});
+function punish(el,c){document.querySelectorAll(".choice").forEach(x=>x.classList.remove("selected"));el.classList.add("selected");let r=document.getElementById("reply");let m={A:"Okay 😭 I'll take the daant. I deserve the full lecture.",B:"5 minutes??? That's actually merciful. I'll serve my sentence. 🧎🏻",C:"*virtual slap received* 👋🏻😭 My soul has been corrected.",D:"<b>WAIT WHAT??? 😭❤️</b><br>Itni jaldi maaf kar diya? Mujhe laga minimum 3 business days lagenge.",E:"I knew I shouldn't have given you options. 😭 You have unlimited power now."};r.innerHTML=m[c];if(c==="D")burst()}
+function burst(){for(let i=0;i<45;i++){let e=document.createElement("div");e.textContent=["❤️","🌻","🌷","♡","✨"][Math.floor(Math.random()*5)];e.style.cssText=`position:fixed;left:50%;top:50%;z-index:60;pointer-events:none;font-size:${15+Math.random()*22}px;--x:${Math.random()*850-425}px;--y:${Math.random()*700-350}px;animation:pop 2s ease-out forwards`;document.body.appendChild(e);setTimeout(()=>e.remove(),2100)}}
+function forgive(){burst();document.getElementById("after").style.display="block"}
+let s=document.createElement("style");s.textContent="@keyframes pop{to{transform:translate(var(--x),var(--y)) rotate(360deg) scale(1.3);opacity:0}}";document.head.appendChild(s);
+addEventListener("scroll",()=>{let m=document.documentElement.scrollHeight-innerHeight;document.getElementById("progress").style.width=(m?scrollY/m*100:0)+"%"},{passive:true});
+setInterval(()=>{let e=document.createElement("div");e.className="floating";e.textContent=["♡","♥","🌻","🌷","✦"][Math.floor(Math.random()*5)];e.style.left=Math.random()*100+"vw";e.style.animationDuration=7+Math.random()*4+"s";document.body.appendChild(e);setTimeout(()=>e.remove(),12000)},1000);
+const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("show")}),{threshold:.14});document.querySelectorAll(".quote").forEach(x=>ob.observe(x));
+</script>
+</body>
+</html>
